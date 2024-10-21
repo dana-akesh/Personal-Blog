@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Daydream Diaries</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="static/css/styles.css">
 </head>
 <body>
 <header>
@@ -11,39 +11,90 @@
         <q>We write to taste life twice, at the moment and in retrospect. -Anaïs Nin</q>
     </div>
     <nav>
-        <a href="html/about.html">About</a>
+        <a href="about.html">About</a>
         <a href="https://www.google.com" target="_blank">Search</a>
-        <a href="html/subscribe.html">Subscribe</a>
+        <a href="#subscribe">Subscribe</a>
     </nav>
-    <img src="/images/background.jpg" alt="Background Image">
+    <img src="static/images/background.jpg" alt="Background Image" id="background-img">
     <h1 id="blog-title">Daydream Diaries</h1>
 </header>
 <main>
+    <section class="intro">
+        A space where <strong>imagination</strong> and life’s moments come alive.
+        <em>Dive into my musings</em> and reflections as I share pieces of my journey.
+        <span>Scroll down to explore</span> stories that blend <u>dreams with reality</u>.
+    </section>
     <!-- blog posts go here -->
-    <section>
-        <h2>Latest Posts</h2>
+    <section class="container">
         <article class="card">
+            <!-- Blog 1 -->
             <h5>World</h5>
-            <h3>Post Title</h3>
-            <p>Post Content</p>
-            <a href="#">Read More</a>
+            <h3> How the World is Evolving</h3>
+            <img src="static/images/globe.jpg" alt="ewe">
+            <p>
+                From political shifts to environmental challenges, the world is in constant flux.
+                Dive into a thoughtful analysis of current events shaping our world and what they mean for our
+                collective future.
+            </p>
+            <button>
+                <a href="#">Read More</a>
+            </button>
         </article>
         <article class="card">
+            <!-- Blog 2 -->
             <h5>Personal Life</h5>
-            <h3>Post Title</h3>
-            <p>Post Content</p>
-            <a href="#">Read More</a>
+            <h3>Balancing Ambition with Inner Peace</h3>
+            <img src="static/images/peace.jpg" alt="ewe">
+            <p>
+                In this candid post, I reflect on the struggle between chasing big dreams and maintaining mental peace.
+                Join me as I explore finding balance, dealing with stress, and embracing self-care.
+            </p>
+            <button>
+                <a href="#">Read More</a>
+            </button>
         </article>
         <article class="card">
+            <!-- Blog 3 -->
             <h5>Cooking</h5>
-            <h3>Post Title</h3>
-            <p>Post Content</p>
-            <a href="#">Read More</a>
+            <h3>The Art of Simple, Healthy Cooking</h3>
+            <img src="static/images/meal.jpg" alt="ewe">
+            <p>
+                Discover how to create delicious, nutritious meals with simple ingredients.
+                Learn easy tips and tricks to transform your everyday dishes into healthy,
+                mouthwatering delights without the hassle.
+            </p>
+            <button>
+                <a href="#">Read More</a>
+            </button>
         </article>
+        <article class="card">
+            <!-- Blog 4 -->
+            <h5>Tech</h5>
+            <h3>What's Next for 2024 and Beyond?</h3>
+            <img src="static/images/tech.jpg" alt="ewe">
+            <p>
+                Explore the cutting-edge innovations set to change the tech landscape.
+                From AI advancements to new hardware,
+                get an inside look at what’s next in technology and how it will impact everyday life.
+            </p>
+            <button>
+                <a href="#">Read More</a>
+            </button>
+        </article>
+    </section>
+    <section class="subscribe" id="subscribe">
+        <h2>Receive Our New Updates</h2>
+        <p>Subscribe to our newsletter to get the latest updates on our blog!</p>
+        <form>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="example@domain.com">
+            <button type="submit">Subscribe</button>
+        </form>
     </section>
 </main>
 <footer>
-    <p>&copy; 2021 Dana's Blog</p>
+    <p>&copy; 2024 Daydream Diaries. All rights reserved.</p>
+    <p> daydreamdiaries@google.com | Phone: (123) 456-7890</p>
 </footer>
 </body>
 </html>

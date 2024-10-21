@@ -1,0 +1,64 @@
+@import "nav_style.css";
+@import "subscribe_style.css";
+@import "card_style.css";
+@import "intro_style.css";
+
+* {
+    font-family: 'Dancing Script', cursive;
+    margin: 0;
+}
+
+.strap {
+    background-color: #ff69b4;
+    color: #f8f8f8;
+    padding: 1.2rem;
+    text-align: center;
+    font-weight: 900;
+}
+
+#background-img {
+    width: 100%;
+    height: auto;
+}
+
+#blog-title {
+    font-size: 3rem;
+    font-weight: 900;
+    color: #ff69b4;
+    background: #f8f8f8;
+    text-align: center;
+}
+
+main {
+    background: #f8f8f8;
+}
+
+.container {
+    display: grid;
+    grid-template-rows: 50% 50%;
+    grid-template-columns: 50% 50%;
+    gap: 0.75rem 0.1rem;
+    padding: 1rem;
+    margin-left: 6rem;
+    margin-right: 6rem;
+}
+
+@media (max-width: 900px) {
+    .container {
+        display: grid; /* Keep the display as grid */
+        grid-template-columns: 100%; /* Change to one column */
+        grid-template-rows: auto; /* Allow rows to adjust based on content */
+    }
+}
+
+footer {
+    background: #ff69b4;
+    color: #f8f8f8;
+    text-align: center;
+    padding: 1rem;
+    font-weight: 900;
+    justify-content: space-evenly;
+}
+
+
+
