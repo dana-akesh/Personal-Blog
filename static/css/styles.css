@@ -41,5 +41,7 @@ main {
         display: grid; /* Keep the display as grid */
         grid-template-columns: 100%; /* Change to one column */
         grid-template-rows: auto; /* Allow rows to adjust based on content */
+        margin-left: 1rem;
+        margin-right: 1rem;
     }
 }

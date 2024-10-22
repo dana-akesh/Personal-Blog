@@ -78,6 +78,17 @@ main {
     padding-top: 0.4rem;
 }
 
+figure{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#background-fig{
+    background: #f8f8f8;
+    color: #7f355a;
+}
+
 .author img {
     width: 5rem;
     height: 5rem;
@@ -86,7 +97,6 @@ main {
     border-radius: 0.5rem;
     margin-top: 1rem;
     position: relative;
-
 }
 
 .author {
