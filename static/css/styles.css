@@ -1,19 +1,12 @@
-@import "nav_style.css";
+@import "header_style.css";
 @import "subscribe_style.css";
 @import "card_style.css";
 @import "intro_style.css";
+@import "footer_style.css";
 
 * {
     font-family: 'Dancing Script', cursive;
     margin: 0;
-}
-
-.strap {
-    background-color: #ff69b4;
-    color: #f8f8f8;
-    padding: 1.2rem;
-    text-align: center;
-    font-weight: 900;
 }
 
 #background-img {
@@ -50,15 +43,3 @@ main {
         grid-template-rows: auto; /* Allow rows to adjust based on content */
     }
 }
-
-footer {
-    background: #ff69b4;
-    color: #f8f8f8;
-    text-align: center;
-    padding: 1rem;
-    font-weight: 900;
-    justify-content: space-evenly;
-}
-
-
-

@@ -27,12 +27,11 @@
     padding-top: 1.2rem;
 }
 
-.card a{
+.card a {
     text-decoration: none;
     font-weight: 900;
     color: #f8f8f8;
 }
-
 
 .card button {
     padding: 0.5rem;
@@ -41,7 +40,7 @@
     background: #ff69b4;
     color: #f8f8f8;
     font-weight: 900;
-    margin: 1rem 0.5rem ;
+    margin: 1rem 0.5rem;
 }
 
 .card button:hover {
@@ -50,12 +49,16 @@
 }
 
 .card img {
-    width: 100%;  /* Set fixed width */
+    width: 100%; /* Set fixed width */
     height: 150px; /* Set fixed height */
     object-fit: cover;
     overflow: hidden;
     border-radius: 0.5rem;
     margin-top: 1rem;
     position: relative;
+}
+
+.card figcaption {
+    color: #7f355a;
 }
 

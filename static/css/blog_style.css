@@ -1,0 +1,116 @@
+@import "header_style.css";
+@import "footer_style.css";
+
+* {
+    font-family: 'Dancing Script', cursive;
+    margin: 0;
+}
+
+main {
+    background: #f8f8f8;
+}
+
+#background-img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    overflow: hidden;
+    border-radius: 0.5rem;
+    position: relative;
+}
+
+#blog-title {
+    font-size: 3rem;
+    font-weight: 900;
+    color: #ff69b4;
+    background: #f8f8f8;
+    text-align: center;
+}
+
+.container {
+    display: grid;
+    grid-template-rows: 50% 50%;
+    grid-template-columns: 50% 50%;
+    gap: 1rem 2rem;
+    padding: 1rem;
+    margin-left: 10rem;
+    margin-right: 10rem;
+    grid-template-areas:
+        "blog blog"
+        "author share";
+}
+
+@media (max-width: 900px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+        gap: 0.75rem 0.1rem;
+        justify-content: center;
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+
+    #blog-title {
+        font-size: 2rem;
+    }
+}
+
+.blog {
+    display: flex;
+    flex-direction: column;
+    color: #333333;
+    background: #f5f5be;
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    grid-area: blog;
+}
+
+.blog h2 {
+    font-weight: 800;
+    font-size: 1.7rem;
+}
+
+.blog p {
+    padding-top: 1.2rem;
+}
+
+.blog li {
+    padding-top: 0.4rem;
+}
+
+.author img {
+    width: 5rem;
+    height: 5rem;
+    object-fit: cover;
+    overflow: hidden;
+    border-radius: 0.5rem;
+    margin-top: 1rem;
+    position: relative;
+
+}
+
+.author {
+    color: #333333;
+    background: #ffd7b0;
+    font-weight: 500;
+    font-size: 1rem;
+    padding: 1.2rem;
+    border-radius: 0.5rem;
+    grid-area: author;
+}
+
+.author li {
+    padding-top: 0.4rem;
+}
+
+.share {
+    color: #333333;
+    background: #f9dce9;
+    padding: 1.2rem;
+    border-radius: 0.5rem;
+    grid-area: share;
+}
+
+.share li {
+    padding-top: 0.4rem;
+}
